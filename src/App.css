@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #f9f9f9;
 }
 
 .logo {
@@ -41,25 +42,12 @@
   color: #888;
 }
 
-.App{
-  display: flex;
-  gap:1rem;
-}
-
-.App {
-  font-family: Arial, sans-serif;
+.dropdown-container {
+  margin-bottom: 20px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  background-color: #f9f9f9;
-}
-
-.dropdown-container {
-  margin-bottom: 10px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
 }
 
 .dropdown-container select {
@@ -68,6 +56,7 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
+  width: 300px;
 }
 
 .dropdown-container h2 {
@@ -79,8 +68,8 @@
 }
 
 .student-list h3 {
-margin-top: 0;
-margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .student-list ul {
@@ -114,4 +103,148 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.filtering {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filtering .subjectFiltering {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+
+
+th i {
+  margin-left: 10px;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+tbody tr td:first-child {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+tbody tr td:first-child:hover {
+  background-color: #e1e1e1;
+}
+
+@media (min-width: 768px) {
+  .mainContainer {
+    gap: 8px;
+  }
+}
+
+
+.tableHeading{
+  background-color: #007BFF;
+  color:white;
+  cursor: pointer;
+}
+
+.tableSubHeading {
+  background-color: #4499f3;
+  color: white;
+}
+
+.schoolContainer{
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+}
+
+.schoolTotal{
+  background-color: rgb(127, 239, 127);
+  font-size: 18px;
+  font-weight: 700;
+}
+.subjectTotal{
+  background-color: rgb(245, 245, 135);
+  font-size: 18px;
+  font-weight: 600;
+}
+.subjectTotalScience{
+  background-color: rgb(243, 197, 138);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+td,th{
+  border: 1px solid black;
+}
+
+/* filter styling */
+.filterMain {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 6px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filtering {
+  display: flex;
+  gap: 3rem;
+}
+
+.subjectFiltering {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subjectFiltering span {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.subjectFiltering select {
+  cursor: pointer;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 200px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.subjectFiltering select:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.subjectFiltering select:focus {
+  border-color: #007BFF;
+  outline: none;
 }

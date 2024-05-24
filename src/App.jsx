@@ -1,12 +1,13 @@
 import React from 'react'
 import './App.css'
-import SchoolScore from './SchoolScore';
+
+import FinalSchool from './FinalSchool';
 
 function App() {
 
   return (
     <>
-      <SchoolScore />
+      <FinalSchool/>
     </>
   )
 }
